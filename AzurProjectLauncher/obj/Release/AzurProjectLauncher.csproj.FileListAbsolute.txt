@@ -1,0 +1,16 @@
+D:\Projects\AzurProjectLauncher\AzurProjectLauncher\bin\Release\AzurProjectLauncher.exe.config
+D:\Projects\AzurProjectLauncher\AzurProjectLauncher\bin\Release\AzurProjectLauncher.exe
+D:\Projects\AzurProjectLauncher\AzurProjectLauncher\bin\Release\AzurProjectLauncher.pdb
+D:\Projects\AzurProjectLauncher\AzurProjectLauncher\obj\Release\MainWindow.g.cs
+D:\Projects\AzurProjectLauncher\AzurProjectLauncher\obj\Release\App.g.cs
+D:\Projects\AzurProjectLauncher\AzurProjectLauncher\obj\Release\AzurProjectLauncher_MarkupCompile.cache
+D:\Projects\AzurProjectLauncher\AzurProjectLauncher\obj\Release\AzurProjectLauncher_MarkupCompile.lref
+D:\Projects\AzurProjectLauncher\AzurProjectLauncher\obj\Release\MainWindow.baml
+D:\Projects\AzurProjectLauncher\AzurProjectLauncher\obj\Release\AzurProjectLauncher.g.resources
+D:\Projects\AzurProjectLauncher\AzurProjectLauncher\obj\Release\AzurProjectLauncher.Properties.Resources.resources
+D:\Projects\AzurProjectLauncher\AzurProjectLauncher\obj\Release\AzurProjectLauncher.csproj.GenerateResource.cache
+D:\Projects\AzurProjectLauncher\AzurProjectLauncher\obj\Release\AzurProjectLauncher.exe
+D:\Projects\AzurProjectLauncher\AzurProjectLauncher\obj\Release\AzurProjectLauncher.pdb
+D:\Projects\AzurProjectLauncher\AzurProjectLauncher\obj\Release\AzurProjectLauncher.csprojAssemblyReference.cache
+D:\Projects\AzurProjectLauncher\AzurProjectLauncher\obj\Release\GetFileInstalationDirectory.g.cs
+D:\Projects\AzurProjectLauncher\AzurProjectLauncher\obj\Release\GetFileInstalationDirectory.baml
