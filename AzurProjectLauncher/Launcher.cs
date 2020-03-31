@@ -25,7 +25,7 @@ namespace AzurProjectLauncher
         public void DownloadFile()
         {
             WebClient myWebClient = new WebClient();
-            string myFileToDownload = "https://github.com/Anri17/shooter-pap/releases/download/beta-20200331/Azur.zip";
+            string myFileToDownload = "https://github.com/Anri17/shooter-pap/releases/download/latest/Azur.zip";
             string currentDirectory = Directory.GetCurrentDirectory();
 
             // Notify user about the instalation process
