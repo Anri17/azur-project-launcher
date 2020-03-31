@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Projects\AzurProjectLauncher\AzurProjectLauncher\obj\Debug\
+D:\Projects\azur-project-launcher\AzurProjectLauncher\obj\Debug\
 AzurProjectLauncher
 none
 false
 DEBUG;TRACE
-D:\Projects\AzurProjectLauncher\AzurProjectLauncher\App.xaml
-11151548125
+D:\Projects\azur-project-launcher\AzurProjectLauncher\App.xaml
+22108190477
 
-71522586929
-13-1505183044
-MainWindow.xaml;
+8-1716391926
+182084153861
+GetFileInstalationDirectory.xaml;MainWindow.xaml;
 
 True
 

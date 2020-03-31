@@ -30,7 +30,7 @@ namespace AzurProjectLauncher
 
         private void LaunchGameButton_Click(object sender, RoutedEventArgs e)
         {
-            Process.Start("ShooterPAP.exe");
+            launcher.LaunchGame();
         }
 
         private void DownloadGameButton_Click(object sender, RoutedEventArgs e)
