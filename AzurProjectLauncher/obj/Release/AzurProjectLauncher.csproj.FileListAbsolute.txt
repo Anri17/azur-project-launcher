@@ -30,3 +30,4 @@ D:\Projects\azur-project-launcher\AzurProjectLauncher\obj\Release\AzurProjectLau
 D:\Projects\azur-project-launcher\AzurProjectLauncher\obj\Release\AzurProjectLauncher.csproj.GenerateResource.cache
 D:\Projects\azur-project-launcher\AzurProjectLauncher\obj\Release\AzurProjectLauncher.exe
 D:\Projects\azur-project-launcher\AzurProjectLauncher\obj\Release\AzurProjectLauncher.pdb
+D:\Projects\azur-project-launcher\AzurProjectLauncher\obj\Release\AzurProjectLauncher.csproj.CoreCompileInputs.cache

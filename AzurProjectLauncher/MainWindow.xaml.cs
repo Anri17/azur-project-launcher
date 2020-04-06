@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Diagnostics;
+using System.IO;
 
 namespace AzurProjectLauncher
 {
@@ -26,6 +27,12 @@ namespace AzurProjectLauncher
         public MainWindow()
         {
             InitializeComponent();
+
+            if (File.Exists("old_ver.exe"))
+            {
+                File.Delete("old_ver.exe");
+                MessageBox.Show("The launcher has been updated");
+            }
         }
 
         private void LaunchGameButton_Click(object sender, RoutedEventArgs e)
@@ -36,6 +43,11 @@ namespace AzurProjectLauncher
         private void DownloadGameButton_Click(object sender, RoutedEventArgs e)
         {
             launcher.DownloadFile();
+        }
+
+        private void UpdateLauncherButton_Click(object sender, RoutedEventArgs e)
+        {
+            launcher.UpdateLauncher();
         }
     }
 }

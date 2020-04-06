@@ -66,5 +66,27 @@ namespace AzurProjectLauncher
                 }
             }
         }
+
+        public void UpdateLauncher()
+        {
+            WebClient myWebClient = new WebClient();
+            string myFileToDownload = "https://github.com/Anri17/azur-project-launcher/releases/download/latest/Azur_Project_Launcher.exe";
+            string currentDirectory = Directory.GetCurrentDirectory();
+
+            // Notify user about the update process
+            MessageBox.Show("The Launcher will now update.");
+
+            // Rename file to old name
+            File.Move(Process.GetCurrentProcess().ProcessName + ".exe", "old_ver.exe");
+            
+            // Download new file
+            myWebClient.DownloadFile(myFileToDownload, "Azur_Project_Launcher.exe");
+
+            // Notify user about update complete
+            MessageBox.Show("The Launcher has been updated and will now restart.");
+
+            Process.Start("Azur_Project_Launcher.exe");
+            Process.GetCurrentProcess().Kill();
+        }
     }
 }

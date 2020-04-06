@@ -5,15 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AzurProjectLauncher"
         mc:Ignorable="d"
-        Title="Azur Project Launcher" Height="222" Width="331" Icon="Icon.png" Background="#FFECF9F8">
-    <Grid Background="#FFECF9F8" Margin="0">
+        Title="Azur Project Launcher" Height="200" Width="340" Icon="Icon.png" Background="#FFECF9F8">
+    <Grid Background="#FFECF9F8" Margin="0" Width="320" Height="160">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="21*"/>
+            <ColumnDefinition Width="11*"/>
         </Grid.ColumnDefinitions>
-        <Label x:Name="VersionLabel" Content="v0.1" HorizontalAlignment="Left" Margin="752,10,-461,0" VerticalAlignment="Top" FontSize="10" Height="23" Width="28"/>
-        <Button x:Name="LaunchGameButton" Content="Play Game" Margin="10,103,0,0" BorderThickness="0" BorderBrush="{x:Null}" Click="LaunchGameButton_Click" Background="#FF336699" Foreground="White" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left" Width="123" Height="60" FontSize="20"/>
-        <Image x:Name="image" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Source="GameTitle.png" Height="76" Width="299"/>
-        <Button x:Name="LaunchGameButton_Copy" Content="Download Game" Margin="189,103,0,0" BorderThickness="0" BorderBrush="{x:Null}" Click="DownloadGameButton_Click" Background="#FF336699" Foreground="White" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120" Height="60"/>
+        <Label x:Name="VersionLabel" Content="v0.1" HorizontalAlignment="Left" Margin="541.739,10,-460,0" VerticalAlignment="Top" FontSize="10" Height="23" Width="28" Grid.Column="1"/>
+        <Button x:Name="LaunchGameButton" Content="Play Game" Margin="20,100,0,0" BorderThickness="0" BorderBrush="{x:Null}" Click="LaunchGameButton_Click" Background="#FF336699" Foreground="White" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120" Height="40" FontSize="20"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Source="GameTitle.png" Height="80" Width="300" Grid.ColumnSpan="2"/>
+        <Button x:Name="LaunchGameButton_Copy" Content="Download Game" Margin="180,100,0,0" BorderThickness="0" BorderBrush="{x:Null}" Click="DownloadGameButton_Click" Background="#FF336699" Foreground="White" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120" Height="40" Grid.ColumnSpan="2"/>
 
     </Grid>
 </Window>
