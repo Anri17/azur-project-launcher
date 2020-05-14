@@ -33,6 +33,22 @@ namespace AzurProjectLauncher
                 File.Delete("old_ver.exe");
                 MessageBox.Show("The launcher has been updated");
             }
+
+            if (!Directory.Exists(launcher.InstallDir))
+            {
+                LaunchGameButton.IsEnabled = false;
+                launcher.DownloadFile();
+                LaunchGameButton.IsEnabled = true;
+            }
+
+            if (!launcher.GameIsUpToDate())
+            {
+                MessageBox.Show("A new game update is available.");
+
+                LaunchGameButton.IsEnabled = false;
+                launcher.DownloadFile();
+                LaunchGameButton.IsEnabled = true;
+            }
         }
 
         private void LaunchGameButton_Click(object sender, RoutedEventArgs e)
@@ -43,11 +59,6 @@ namespace AzurProjectLauncher
         private void DownloadGameButton_Click(object sender, RoutedEventArgs e)
         {
             launcher.DownloadFile();
-        }
-
-        private void UpdateLauncherButton_Click(object sender, RoutedEventArgs e)
-        {
-            launcher.UpdateLauncher();
         }
     }
 }

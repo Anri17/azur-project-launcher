@@ -31,3 +31,20 @@ D:\Projects\azur-project-launcher\AzurProjectLauncher\obj\Release\AzurProjectLau
 D:\Projects\azur-project-launcher\AzurProjectLauncher\obj\Release\AzurProjectLauncher.exe
 D:\Projects\azur-project-launcher\AzurProjectLauncher\obj\Release\AzurProjectLauncher.pdb
 D:\Projects\azur-project-launcher\AzurProjectLauncher\obj\Release\AzurProjectLauncher.csproj.CoreCompileInputs.cache
+D:\Azur Project\azur-project-launcher\AzurProjectLauncher\bin\Release\AzurProjectLauncher.exe.config
+D:\Azur Project\azur-project-launcher\AzurProjectLauncher\bin\Release\AzurProjectLauncher.exe
+D:\Azur Project\azur-project-launcher\AzurProjectLauncher\bin\Release\AzurProjectLauncher.pdb
+D:\Azur Project\azur-project-launcher\AzurProjectLauncher\obj\Release\AzurProjectLauncher.csprojAssemblyReference.cache
+D:\Azur Project\azur-project-launcher\AzurProjectLauncher\obj\Release\GetFileInstalationDirectory.g.cs
+D:\Azur Project\azur-project-launcher\AzurProjectLauncher\obj\Release\MainWindow.g.cs
+D:\Azur Project\azur-project-launcher\AzurProjectLauncher\obj\Release\App.g.cs
+D:\Azur Project\azur-project-launcher\AzurProjectLauncher\obj\Release\AzurProjectLauncher_MarkupCompile.cache
+D:\Azur Project\azur-project-launcher\AzurProjectLauncher\obj\Release\AzurProjectLauncher_MarkupCompile.lref
+D:\Azur Project\azur-project-launcher\AzurProjectLauncher\obj\Release\GetFileInstalationDirectory.baml
+D:\Azur Project\azur-project-launcher\AzurProjectLauncher\obj\Release\MainWindow.baml
+D:\Azur Project\azur-project-launcher\AzurProjectLauncher\obj\Release\AzurProjectLauncher.g.resources
+D:\Azur Project\azur-project-launcher\AzurProjectLauncher\obj\Release\AzurProjectLauncher.Properties.Resources.resources
+D:\Azur Project\azur-project-launcher\AzurProjectLauncher\obj\Release\AzurProjectLauncher.csproj.GenerateResource.cache
+D:\Azur Project\azur-project-launcher\AzurProjectLauncher\obj\Release\AzurProjectLauncher.csproj.CoreCompileInputs.cache
+D:\Azur Project\azur-project-launcher\AzurProjectLauncher\obj\Release\AzurProjectLauncher.exe
+D:\Azur Project\azur-project-launcher\AzurProjectLauncher\obj\Release\AzurProjectLauncher.pdb

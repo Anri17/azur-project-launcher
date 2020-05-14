@@ -15,11 +15,13 @@ namespace AzurProjectLauncher
     {
         public string InstallDir { get; private set; }
         public string FileName { get; private set; }
+        public string VersionFile { get; private set; }
 
         public Launcher()
         {
             InstallDir = "C:\\Azur Project";
             FileName = "Azur.zip";
+            VersionFile = "version.txt";
         }
 
         public void DownloadFile()
@@ -45,6 +47,7 @@ namespace AzurProjectLauncher
             File.Delete(currentDirectory + "\\" + FileName); // delete zip file after extraction is done
 
             MessageBox.Show("Download Sucessfull!"); // notify user that everything is done
+            
         }
 
         public void LaunchGame()
@@ -67,26 +70,35 @@ namespace AzurProjectLauncher
             }
         }
 
-        public void UpdateLauncher()
+        public bool GameIsUpToDate()
         {
+            if (!Directory.Exists(InstallDir))
+            {
+                return false;
+            }
+
+            if (!File.Exists(InstallDir + @"\version.txt"))
+            {
+                return false;
+            }
+
             WebClient myWebClient = new WebClient();
-            string myFileToDownload = "https://github.com/Anri17/azur-project-launcher/releases/download/latest/Azur_Project_Launcher.exe";
+            string myFileToDownload = "https://github.com/Anri17/shooter-pap/releases/download/latest/version.txt";
             string currentDirectory = Directory.GetCurrentDirectory();
 
-            // Notify user about the update process
-            MessageBox.Show("The Launcher will now update.");
+            myWebClient.DownloadFile(myFileToDownload, "version.txt");
 
-            // Rename file to old name
-            File.Move(Process.GetCurrentProcess().ProcessName + ".exe", "old_ver.exe");
-            
-            // Download new file
-            myWebClient.DownloadFile(myFileToDownload, "Azur_Project_Launcher.exe");
+            string downloadedVersionFile = currentDirectory + @"\version.txt";
 
-            // Notify user about update complete
-            MessageBox.Show("The Launcher has been updated and will now restart.");
+            string currentVersion = File.ReadAllText(InstallDir + @"\version.txt");
+            string downloadedVersion = File.ReadAllText(downloadedVersionFile);
 
-            Process.Start("Azur_Project_Launcher.exe");
-            Process.GetCurrentProcess().Kill();
+            if (!Equals(currentVersion, downloadedVersion))
+            {
+                return false;
+            }
+
+            return true;
         }
     }
 }
