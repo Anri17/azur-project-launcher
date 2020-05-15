@@ -60,5 +60,10 @@ namespace AzurProjectLauncher
         {
             launcher.DownloadFile();
         }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            labelGameInstallPath.Content = launcher.DefineGameDirectory();
+        }
     }
 }

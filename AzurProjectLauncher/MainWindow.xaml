@@ -5,20 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AzurProjectLauncher"
         mc:Ignorable="d"
-        Title="Azur Project Launcher" Height="200" Width="350" Icon="Icon.png" Background="White" ResizeMode="NoResize">
-    <Grid Background="White" Margin="10" Width="320" Height="147">
+        Title="Azur Project Launcher" Height="203.562" Width="324.745" Icon="Icon.png" Background="White" ResizeMode="NoResize">
+    <Grid Background="White" Margin="0">
         <Grid.RowDefinitions>
-            <RowDefinition Height="90"/>
-            <RowDefinition Height="67"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
-            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Label x:Name="VersionLabel" Content="v0.1" HorizontalAlignment="Left" Margin="542,10,-410,0" VerticalAlignment="Top" FontSize="10" Height="23" Width="28" Grid.Column="1"/>
-        <Button x:Name="LaunchGameButton" Content="Play Game" Margin="10,6,0,0" BorderThickness="0" BorderBrush="{x:Null}" Click="LaunchGameButton_Click" Background="#FF336699" Foreground="White" FontWeight="Bold" VerticalAlignment="Top" Height="40" FontSize="20" HorizontalAlignment="Left" Width="140" Grid.Row="1"/>
-        <Image x:Name="image" HorizontalAlignment="Left" Margin="10,6,0,0" VerticalAlignment="Top" Source="GameTitle.png" Height="70" Width="300" Grid.ColumnSpan="2"/>
-        <Button x:Name="LaunchGameButton_Copy" Content="Force Update" Margin="10,6,0,0" BorderThickness="0" BorderBrush="{x:Null}" Click="DownloadGameButton_Click" Background="#FF336699" Foreground="White" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left" Width="140" Height="40" Grid.Row="1" Grid.Column="1" FontSize="16"/>
+        <Button x:Name="LaunchGameButton" Content="Play Game" Margin="10,0,0,10" BorderThickness="0" BorderBrush="{x:Null}" Click="LaunchGameButton_Click" Background="#FF336699" Foreground="White" FontWeight="Bold" VerticalAlignment="Bottom" Height="40" FontSize="18" HorizontalAlignment="Left" Width="140" Grid.Row="1" FontFamily="Diogenes"/>
+        <Image x:Name="image" HorizontalAlignment="Center" Margin="10" VerticalAlignment="Center" Source="GameTitle.png" Height="70" Width="300"/>
+        <Button x:Name="LaunchGameButton_Copy" Content="Force Update" BorderThickness="0" BorderBrush="{x:Null}" Click="DownloadGameButton_Click" Background="#FF336699" Foreground="White" FontWeight="Bold" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="140" Height="40" Grid.Row="1" FontSize="16" Margin="169,0,0,10" FontFamily="Diogenes"/>
+        <Button x:Name="BrowseInstallDirectory" Content="..." HorizontalAlignment="Right" Margin="0,1,10,0" Grid.Row="1" VerticalAlignment="Top" Width="24" Click="button_Click" Height="20"/>
+        <Label x:Name="labelGameInstallPath" Content="C:\Azur Project" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" FontSize="10" Height="23" Width="270" Grid.Row="1"/>
 
     </Grid>
 </Window>

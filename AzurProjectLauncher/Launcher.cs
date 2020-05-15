@@ -16,6 +16,7 @@ namespace AzurProjectLauncher
         public string InstallDir { get; private set; }
         public string FileName { get; private set; }
         public string VersionFile { get; private set; }
+        public string BaseDir { get; private set; }
 
         public Launcher()
         {
@@ -99,6 +100,33 @@ namespace AzurProjectLauncher
             }
 
             return true;
+        }
+
+        public string DefineGameDirectory()
+        {
+            string newInstallDir;
+            string oldInstallDir = InstallDir;
+            using (var dialog = new FolderBrowserDialog())
+            {
+                DialogResult result = dialog.ShowDialog();
+                newInstallDir = dialog.SelectedPath + @"\Azur Project";
+            }
+
+            if (Equals(oldInstallDir, newInstallDir))
+            {
+                return oldInstallDir;
+            }
+            else
+            {
+                MessageBox.Show($"The game files will now be moved to {newInstallDir}");
+
+                Directory.Move(oldInstallDir, newInstallDir);
+
+                InstallDir = newInstallDir;
+
+                MessageBox.Show($"The game files have been moved.");
+                return newInstallDir;
+            }
         }
     }
 }
