@@ -94,6 +94,8 @@ namespace AzurProjectLauncher
             string currentVersion = File.ReadAllText(InstallDir + @"\version.txt");
             string downloadedVersion = File.ReadAllText(downloadedVersionFile);
 
+            File.Delete(downloadedVersionFile);
+
             if (!Equals(currentVersion, downloadedVersion))
             {
                 return false;

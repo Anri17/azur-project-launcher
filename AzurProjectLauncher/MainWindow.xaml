@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AzurProjectLauncher"
         mc:Ignorable="d"
-        Title="Azur Project Launcher" Height="203.562" Width="324.745" Icon="Icon.png" Background="White" ResizeMode="NoResize">
-    <Grid Background="White" Margin="0">
+        Title="Azur Project Launcher" Height="223.562" Width="344.745" Icon="Icon.png" Background="White" ResizeMode="NoResize">
+    <Grid Background="White" Margin="0" Width="319" Height="175">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition/>
