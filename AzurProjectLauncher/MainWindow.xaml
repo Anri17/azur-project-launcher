@@ -18,7 +18,7 @@
         <Image x:Name="image" HorizontalAlignment="Center" Margin="10" VerticalAlignment="Center" Source="GameTitle.png" Height="70" Width="300"/>
         <Button x:Name="LaunchGameButton_Copy" Content="Force Update" BorderThickness="0" BorderBrush="{x:Null}" Click="DownloadGameButton_Click" Background="#FF336699" Foreground="White" FontWeight="Bold" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="140" Height="40" Grid.Row="1" FontSize="16" Margin="169,0,0,10" FontFamily="Diogenes"/>
         <Button x:Name="BrowseInstallDirectory" Content="..." HorizontalAlignment="Right" Margin="0,1,10,0" Grid.Row="1" VerticalAlignment="Top" Width="24" Click="button_Click" Height="20"/>
-        <Label x:Name="labelGameInstallPath" Content="C:\Azur Project" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" FontSize="10" Height="23" Width="270" Grid.Row="1"/>
+        <Label x:Name="labelGameInstallPath" Content="" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" FontSize="10" Height="23" Width="270" Grid.Row="1"/>
 
     </Grid>
 </Window>

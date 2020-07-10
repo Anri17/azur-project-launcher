@@ -1,0 +1,18 @@
+﻿<Window x:Class="AzurProjectLauncher.FirstTimeGameInstalation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AzurProjectLauncher"
+        mc:Ignorable="d"
+        Title="FirstTimeGameInstalation" Height="176.786" Width="327.747">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="BrowseInstallDirectory" Content="..." HorizontalAlignment="Left" Margin="285,55,0,0" VerticalAlignment="Top" Width="24" Height="20"/>
+        <Label x:Name="labelGameInstallPath" Content="" HorizontalAlignment="Left" Margin="10,52,0,0" VerticalAlignment="Top" FontSize="10" Height="23" Width="270"/>
+        <Label x:Name="label" Content="The game will be installed in the following directory:&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="42" Width="286"/>
+
+    </Grid>
+</Window>

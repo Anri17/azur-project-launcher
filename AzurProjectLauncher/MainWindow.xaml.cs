@@ -34,21 +34,20 @@ namespace AzurProjectLauncher
                 MessageBox.Show("The launcher has been updated");
             }
 
-            if (!Directory.Exists(launcher.InstallDir))
+            if (!Directory.Exists(launcher.GameDir))
             {
                 LaunchGameButton.IsEnabled = false;
-                launcher.DownloadFile();
-                LaunchGameButton.IsEnabled = true;
+                if (launcher.DownloadFile()) LaunchGameButton.IsEnabled = true;
             }
 
             if (!launcher.GameIsUpToDate())
             {
                 MessageBox.Show("A new game update is available.");
 
-                LaunchGameButton.IsEnabled = false;
                 launcher.DownloadFile();
-                LaunchGameButton.IsEnabled = true;
             }
+
+            labelGameInstallPath.Content = Properties.Settings.Default.GameDir;
         }
 
         private void LaunchGameButton_Click(object sender, RoutedEventArgs e)
@@ -63,9 +62,9 @@ namespace AzurProjectLauncher
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            /*
-            labelGameInstallPath.Content = launcher.DefineGameDirectory();
-            */
+            Properties.Settings.Default.GameDir = launcher.DefineGameDirectory();
+            Properties.Settings.Default.Save();
+            labelGameInstallPath.Content = Properties.Settings.Default.GameDir;
         }
     }
 }
